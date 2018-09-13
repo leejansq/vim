@@ -15,3 +15,14 @@ call vundle#end()
 vim
 :VundleInstall 
 ```
+## Install YCM ##
+```
+cd ~/.vim/bundle/YouCompleteMe
+./install.py --clang-completer
+```
+### 配置ycm ###
+```
+cp third_party/ycmd/examples/.ycm_extra_conf.py ~/
+vim ~/.vimrc
+>> let g:ycm_global_ycm_extra_conf='~/.ycm_extra_conf.py'
+```
